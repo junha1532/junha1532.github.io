@@ -1,5 +1,8 @@
 body {
   margin: 0;
+}
+
+#about {
   background-color: #e0f7fa;
 }
 
@@ -326,7 +329,7 @@ li > span:nth-child(2) {
   color: white;
   width: 130px;
   margin-bottom: 10px;
-  padding: 13.8px 10px;
+  padding: 14px 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -352,4 +355,128 @@ li > span:nth-child(2) {
   background: linear-gradient(45deg, #00363a, #428e92);
   border: 3px solid #b0bec5;
   border-radius: 100px;
+}
+
+#portfolio {
+  background-color: #5f5f5f;
+}
+
+#project-filters {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#project-filters > li > div {
+  padding: 0 10px;
+  background-color: aquamarine;
+}
+
+.project-machine-learning {
+  text-align: center;
+}
+
+.project-gallery ul {
+  list-style: none;
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#card-1 {
+  background: url(http://findmatthew.com/style/../img/thumb-1.jpg) center
+    center/cover;
+  height: 300px;
+  width: 390px;
+  max-width: 100%;
+  transition: opacity 0.5s;
+  width: calc(50vw - 8px);
+}
+
+#card-2 {
+}
+
+#card-3 {
+}
+
+#card-4 {
+}
+
+#card-5 {
+}
+
+text {
+  color: #1b242f;
+  opacity: 0;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  z-index: 2;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.bold {
+  font-size: 16pt;
+}
+
+.highlight {
+  color: #e31b6d;
+}
+
+.button {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  border: 2px solid #e31b6d;
+  font-size: 13pt;
+  margin: 0 auto;
+  padding: 7px 0;
+  width: 170px;
+  color: #1b242f;
+  opacity: 0;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  z-index: 2;
+  box-sizing: inherit;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.chat-dot {
+  position: fixed;
+  height: 60px;
+  width: 60px;
+  bottom: 40px;
+  right: 40px;
+  opacity: 1;
+  background: rgb(34, 34, 34);
+  border-radius: 50%;
+  justify-content: center;
+  touch-action: manipulation;
+  z-index: 10001;
+}
+
+.chat-dot i {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-bar {
+  background: rgb(34, 34, 34);
+  position: fixed;
+  height: 400px;
+  width: 200px;
+  bottom: 80px;
+  right: 80px;
+  z-index: 10000;
 }

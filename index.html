@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Junha Park | Data Scientist | Fullstack Developer</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./ihover.css" />
     <script
       src="https://kit.fontawesome.com/bd92bc56a9.js"
       crossorigin="anonymous"
@@ -182,32 +183,122 @@
     </section>
     <!-- PORTFOLIO -->
     <section id="portfolio">
-      <div>PORTFOLIO</div>
+      <div class="container-flex">
+        <div id="about-title">Projects</div>
+        <div id="header-bar"></div>
+        <!--this is for bar below Portfolio sub-Title-->
+        <!--Project filters-->
+        <div class="filter-wrap">
+          <ul id="project-filters">
+            <li><div>ALL</div></li>
+            <li><div>PYTHON</div></li>
+            <li><div>TENSORFLOW</div></li>
+            <li><div>DOCKER</div></li>
+            <li><div>KUBERNETES</div></li>
+            <li><div>AWS</div></li>
+          </ul>
+        </div>
+        <!--Project filters-->
+        <div class="project-gallery">
+          <ul>
+            <li>
+              <div class="project-wrapper python">
+                <!-- normal -->
+                <div class="ih-item square effect6 from_top_and_bottom">
+                  <a href="#">
+                    <div class="img">
+                      <img src="me.jpg" alt="img" />
+                    </div>
+                    <div class="info">
+                      <h3>Heading here</h3>
+                      <p>Description goes here</p>
+                    </div></a
+                  >
+                </div>
+                <!-- end normal -->
+              </div>
+            </li>
+            <li>
+              <div class="project-wrapper python">
+                <!-- normal -->
+                <div class="ih-item square effect6 from_top_and_bottom">
+                  <a href="#">
+                    <div class="img">
+                      <img src="me.jpg" alt="img" />
+                    </div>
+                    <div class="info">
+                      <h3>Heading here</h3>
+                      <p>Description goes here</p>
+                    </div></a
+                  >
+                </div>
+                <!-- end normal -->
+              </div>
+            </li>
+            <li>
+              <div class="project-wrapper python">
+                <!-- normal -->
+                <div class="ih-item square effect6 from_top_and_bottom">
+                  <a href="#">
+                    <div class="img">
+                      <img src="me.jpg" alt="img" />
+                    </div>
+                    <div class="info">
+                      <h3>Heading here</h3>
+                      <p>Description goes here</p>
+                    </div></a
+                  >
+                </div>
+                <!-- end normal -->
+              </div>
+            </li>
+            <li>
+              <div class="project-wrapper python">
+                <!-- normal -->
+                <div class="ih-item square effect6 from_top_and_bottom">
+                  <a href="#">
+                    <div class="img">
+                      <img src="me.jpg" alt="img" />
+                    </div>
+                    <div class="info">
+                      <h3>Heading here</h3>
+                      <p>Description goes here</p>
+                    </div></a
+                  >
+                </div>
+                <!-- end normal -->
+              </div>
+            </li>
+            <li>
+              <div class="project-wrapper python">
+                <!-- normal -->
+                <div class="ih-item square effect6 from_top_and_bottom">
+                  <a href="#">
+                    <div class="img">
+                      <img src="me.jpg" alt="img" />
+                    </div>
+                    <div class="info">
+                      <h3>Heading here</h3>
+                      <p>Description goes here</p>
+                    </div></a
+                  >
+                </div>
+                <!-- end normal -->
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
       <div></div>
-      <!--this is for bar below Portfolio sub-Title-->
-      <!--Project filters-->
-      <div class="filter-wrap">
-        <ul>
-          <li><div>ALL</div></li>
-          <li><div>PYTHON</div></li>
-          <li><div>TENSORFLOW</div></li>
-          <li><div>DOCKER</div></li>
-          <li><div>KUBERNETES</div></li>
-          <li><div>AWS</div></li>
-        </ul>
-      </div>
-      <!--Project filters-->
-      <div class="project-gallery">
-        <ul>
-          <li><div>Project1</div></li>
-          <li><div>Project2</div></li>
-        </ul>
-      </div>
     </section>
     <!--This is for stationary chat bar-->
     <div class="chat-bar">
-      <div>Chat Bar</div>
-      <div>Chat Dot</div>
+      <form action="mailto:junha.park@mail.mcgill.ca" method="post" enctype="text/plain">
+        <input placeholder="Name" type="text" name="name"><br>
+        <input placeholder="Enter email" type="text" name="mail"><br>
+        <textarea placeholder="Your Message" type="text" name="message"></textarea>><br><br>
+        <input type="submit" value="Send">
     </div>
+    <button class="chat-dot"><i class="fas fa-comment-alt fa-2x"></i></button>
   </body>
 </html>
