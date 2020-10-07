@@ -6,11 +6,11 @@
     <title>Junha Park | Data Scientist | Fullstack Developer</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./ihover.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <script
       src="https://kit.fontawesome.com/bd92bc56a9.js"
       crossorigin="anonymous"
     ></script>
-    <script src="myScript.js"></script>
   </head>
   <body>
     <header class="page-header">
@@ -298,14 +298,14 @@
         <button id="close-chat-bar" onclick="show_close()">X</button>
       </div>
       <!--method="post"-->
-      <form id="gform" action="">
+      <form action="/" id="gform">
         <div class="form-element">
-          <input id="name" placeholder=" Name" name="name" />
+          <input id="name" placeholder="Name" name="name" />
         </div>
         <div class="form-element">
           <input
             id="email"
-            placeholder=" Enter email"
+            placeholder="Enter email"
             type="email"
             name="email"
           />
@@ -313,16 +313,17 @@
         <div class="form-element">
           <textarea
             id="message"
-            placeholder=" Your Message"
+            placeholder="Your Message"
             name="message"
           ></textarea>
         </div>
-        <input id="submit-form" type="submit" value="&nbsp;Send" />
+        <input id="submit-form" type="submit" value="Submit" />
       </form>
     </div>
-    <div id="submit-status" class="success">Success</div>
+    <div id="submit-status" class=""></div>
     <button class="chat-dot" onclick="show_close()">
       <i class="fas fa-comment-alt fa-2x"></i>
     </button>
   </body>
+  <script src="myScript.js"></script>
 </html>
