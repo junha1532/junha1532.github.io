@@ -10,6 +10,7 @@
       src="https://kit.fontawesome.com/bd92bc56a9.js"
       crossorigin="anonymous"
     ></script>
+    <script src="myScript.js"></script>
   </head>
   <body>
     <header class="page-header">
@@ -20,7 +21,7 @@
               <i class="fas fa-info"></i>
             </span>
             <span>
-              <a href="" class="nav-link">ABOUT</a>
+              <div class="nav-link">ABOUT</div>
             </span>
           </li>
           <li class="navbar-route">
@@ -28,7 +29,7 @@
               <i class="fas fa-briefcase"></i>
             </span>
             <span>
-              <a href="" class="nav-link">PORTFOLIO</a>
+              <div class="nav-link">PORTFOLIO</div>
             </span>
           </li>
           <li class="navbar-route">
@@ -36,7 +37,7 @@
               <i class="fas fa-phone"></i>
             </span>
             <span>
-              <a href="" class="nav-link">CONTACT</a>
+              <div onclick="show()" class="nav-link">CONTACT</div>
             </span>
           </li>
         </ul>
@@ -207,7 +208,7 @@
                 <div class="ih-item square effect6 from_top_and_bottom">
                   <a href="#">
                     <div class="img">
-                      <img src="me.jpg" alt="img" />
+                      <img src="python.png" alt="img" />
                     </div>
                     <div class="info">
                       <h3>Heading here</h3>
@@ -224,7 +225,7 @@
                 <div class="ih-item square effect6 from_top_and_bottom">
                   <a href="#">
                     <div class="img">
-                      <img src="me.jpg" alt="img" />
+                      <img src="tensorflow.png" alt="img" />
                     </div>
                     <div class="info">
                       <h3>Heading here</h3>
@@ -241,7 +242,7 @@
                 <div class="ih-item square effect6 from_top_and_bottom">
                   <a href="#">
                     <div class="img">
-                      <img src="me.jpg" alt="img" />
+                      <img src="html.png" alt="img" />
                     </div>
                     <div class="info">
                       <h3>Heading here</h3>
@@ -258,7 +259,7 @@
                 <div class="ih-item square effect6 from_top_and_bottom">
                   <a href="#">
                     <div class="img">
-                      <img src="me.jpg" alt="img" />
+                      <img src="css.png" alt="img" />
                     </div>
                     <div class="info">
                       <h3>Heading here</h3>
@@ -275,7 +276,7 @@
                 <div class="ih-item square effect6 from_top_and_bottom">
                   <a href="#">
                     <div class="img">
-                      <img src="me.jpg" alt="img" />
+                      <img src="javascript.png" alt="img" />
                     </div>
                     <div class="info">
                       <h3>Heading here</h3>
@@ -292,13 +293,36 @@
       <div></div>
     </section>
     <!--This is for stationary chat bar-->
-    <div class="chat-bar">
-      <form action="mailto:junha.park@mail.mcgill.ca" method="post" enctype="text/plain">
-        <input placeholder="Name" type="text" name="name"><br>
-        <input placeholder="Enter email" type="text" name="mail"><br>
-        <textarea placeholder="Your Message" type="text" name="message"></textarea>><br><br>
-        <input type="submit" value="Send">
+    <div id="chat-bar">
+      <div id="close-button-wrapper">
+        <button id="close-chat-bar" onclick="show_close()">X</button>
+      </div>
+      <!--method="post"-->
+      <form id="gform" action="">
+        <div class="form-element">
+          <input id="name" placeholder=" Name" name="name" />
+        </div>
+        <div class="form-element">
+          <input
+            id="email"
+            placeholder=" Enter email"
+            type="email"
+            name="email"
+          />
+        </div>
+        <div class="form-element">
+          <textarea
+            id="message"
+            placeholder=" Your Message"
+            name="message"
+          ></textarea>
+        </div>
+        <input id="submit-form" type="submit" value="&nbsp;Send" />
+      </form>
     </div>
-    <button class="chat-dot"><i class="fas fa-comment-alt fa-2x"></i></button>
+    <div id="submit-status" class="success">Success</div>
+    <button class="chat-dot" onclick="show_close()">
+      <i class="fas fa-comment-alt fa-2x"></i>
+    </button>
   </body>
 </html>
