@@ -209,7 +209,7 @@ li > span:nth-child(2) {
 
 #about-item-wrapper {
   justify-content: center;
-  padding: 0 100px;
+  padding: 0 30px;
 }
 
 #about-text {
