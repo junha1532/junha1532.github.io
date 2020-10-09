@@ -202,6 +202,7 @@ li > span:nth-child(2) {
 #about-items {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
@@ -214,6 +215,7 @@ li > span:nth-child(2) {
 #about-text {
   text-align: center;
   max-width: 200px;
+  height: 100px;
 }
 
 .fa-file-alt,
@@ -234,6 +236,7 @@ li > span:nth-child(2) {
 .skills-wrapper {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -321,7 +324,7 @@ li > span:nth-child(2) {
 .progress-bar {
   background-color: #99b9c0;
   height: 30px;
-  width: 400px;
+  width: 300px;
   border-radius: 0px 10px 10px 0px;
   position: relative;
   margin-bottom: 10px;
@@ -361,7 +364,7 @@ li > span:nth-child(2) {
   color: black;
   margin-bottom: 10px;
   position: relative;
-  right: 40px;
+  right: 32px;
 }
 
 #skill-wrapper {
