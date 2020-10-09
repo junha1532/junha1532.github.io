@@ -14,6 +14,16 @@ body {
   width: 100%;
   z-index: 9999;
 }
+
+.toggle-btn {
+  display: none;
+  position: absolute;
+  right: 30px;
+  top: 15px;
+  font-size: 30px;
+  color: #1abc9c;
+}
+
 .navbar {
   max-width: 1600px;
   display: flex;
@@ -100,6 +110,41 @@ li > span:nth-child(2) {
 
 .fa-brain {
   color: #90caf9;
+}
+
+#showcase {
+  min-height: 600px;
+  background: url(ai.jpg);
+  background-size: cover;
+  filter: grayscale(50%);
+  background-position: center -50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#showcase > h1 {
+  color: rgb(233, 232, 232);
+  padding: 10px;
+  font-size: 30px;
+  background-color: hsla(87, 94%, 6%, 0.582);
+}
+
+#showcase > h1 > span {
+  color: #0af7ff;
+}
+
+#showcase > div {
+  padding: 10px;
+  border: 3px solid #0af7ff;
+  background-color: hsla(87, 94%, 6%, 0.582);
+}
+
+#showcase > div > a {
+  color: rgb(233, 232, 232);
+  font-size: 20px;
+  text-decoration: none;
 }
 
 #about {
@@ -585,4 +630,72 @@ input[type='submit']:hover {
     opacity: 0;
     pointer-events: none;
   }
+}
+
+@media all and (max-width: 500px) {
+  .navbar {
+    flex-direction: column;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+  }
+  .navbar-routes {
+    display: none;
+    flex-direction: column;
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    box-ordinal-group: 2;
+  }
+
+  .navbar-icons {
+    display: none;
+    flex-direction: column;
+    -webkit-box-ordinal-group: 3;
+    -moz-box-ordinal-group: 3;
+    box-ordinal-group: 3;
+  }
+
+  .navbar-logo {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    transform: none;
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    box-ordinal-group: 1;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+  }
+
+  .navbar-routes.active,
+  .navbar-icons.active {
+    display: flex;
+  }
+
+  .navbar-routes li,
+  .navbar-icons li {
+    border-radius: 5px;
+    list-style-type: none;
+    height: 35px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .toggle-btn {
+    display: block;
+  }
+}
+
+@media all and (min-width: 501px) and (max-width: 1024px) {
 }

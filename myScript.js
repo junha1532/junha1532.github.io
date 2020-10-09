@@ -1,3 +1,26 @@
+/* mobile toggle button */
+const toggleBtn = document.querySelector('.toggle-btn');
+const routes = document.querySelector('.navbar-routes');
+const icons = document.querySelector('.navbar-icons');
+
+
+toggleBtn.addEventListener('click', ()=>{
+  routes.classList.toggle('active');
+  icons.classList.toggle('active');
+});
+
+/* prevent jumping of toggle btn */
+$('#toggle').click(function(event) {
+
+  // This will prevent the default action of the anchor
+  event.preventDefault();
+
+  // Failing the above, you could use this, however the above is recommended
+  return false;
+
+});
+
+
 /* attach a submit handler to the form */
 $('#gform').submit(function (event) {
   /* stop form from submitting normally */
