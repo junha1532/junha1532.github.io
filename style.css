@@ -346,6 +346,11 @@ li > span:nth-child(2) {
   font-size: 30px;
 }
 
+#my-info-text {
+  width: 90%;
+  text-align: center;
+}
+
 /* generate my-image in hexagon frame */
 .my-image {
   position: relative;
