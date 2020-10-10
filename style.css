@@ -136,15 +136,30 @@ li > span:nth-child(2) {
 }
 
 #showcase > div {
-  padding: 10px;
+  /*
   border: 3px solid #0af7ff;
-  background-color: hsla(87, 94%, 6%, 0.582);
+  background-color: hsla(87, 94%, 6%, 0.582);*/
 }
 
 #showcase > div > a {
-  color: rgb(233, 232, 232);
-  font-size: 20px;
+  color: #03e9f4;
+  background-color: hsla(87, 94%, 6%, 0.582);
+  font-size: 24px;
+  position: relative;
+  display: inline-block;
+  padding: 25px 30px;
+  margin: 40px 0;
+  font-size: 24px;
   text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+#showcase > div > a:hover {
+  background: #03e9f4;
+  color: #dddddd;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 200px #03e9f4;
 }
 
 #about {
@@ -635,7 +650,7 @@ input[type='submit']:hover {
   }
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 830px) {
   .navbar {
     flex-direction: column;
     display: -webkit-box;
