@@ -135,31 +135,110 @@ li > span:nth-child(2) {
   color: #0af7ff;
 }
 
-#showcase > div {
-  /*
-  border: 3px solid #0af7ff;
-  background-color: hsla(87, 94%, 6%, 0.582);*/
-}
-
-#showcase > div > a {
-  color: #03e9f4;
+#showcase > a {
+  color: #0af7ff;
   background-color: hsla(87, 94%, 6%, 0.582);
-  font-size: 24px;
+  font-size: 20px;
   position: relative;
   display: inline-block;
-  padding: 25px 30px;
-  margin: 40px 0;
+  padding: 10px 15px;
+  margin: 20px 0;
   font-size: 24px;
+  overflow: hidden;
   text-decoration: none;
   text-transform: uppercase;
   transition: 0.5s;
 }
 
-#showcase > div > a:hover {
+#showcase > a:hover {
   background: #03e9f4;
   color: #dddddd;
   box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
     0 0 200px #03e9f4;
+}
+
+#showcase > a > span {
+  position: absolute;
+  display: block;
+}
+
+#showcase > a > span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 3.5px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: animate1 2s linear infinite;
+}
+
+@keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+#showcase > a > span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 3.5px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: animate2 2s linear infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes animate2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+#showcase > a > span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 3.5px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: animate3 2s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes animate3 {
+  0% {
+    right: -100%;
+  }
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+#showcase > a > span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 3.5px;
+  height: 100%;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: animate4 2s linear infinite;
+  animation-delay: 1.5s;
+}
+
+@keyframes animate4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
 }
 
 #about {
