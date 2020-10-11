@@ -242,7 +242,7 @@ li > span:nth-child(2) {
 }
 
 #about {
-  padding-top: 110px;
+  padding-top: 30px;
 }
 
 .container-flex {
@@ -347,7 +347,7 @@ li > span:nth-child(2) {
 }
 
 #my-info-text {
-  width: 90%;
+  width: 350px;
   text-align: center;
 }
 
@@ -512,6 +512,7 @@ li > span:nth-child(2) {
 
 #portfolio {
   background-color: #07b2be;
+  padding-top: 30px;
 }
 
 #project-filters {
@@ -532,6 +533,7 @@ li > span:nth-child(2) {
 }
 
 .project-gallery ul {
+  max-width: 1000px;
   list-style: none;
   padding: 0;
   width: 100%;
