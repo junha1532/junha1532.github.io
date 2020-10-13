@@ -16,26 +16,27 @@ body {
 }
 
 #navbar {
-  position: absolute;
+  background-color: #0000005b;
+  position: fixed;
   width: 100%;
-  height: 50px;
-  background-color: #3a40520c;
-  z-index: 100000;
+  z-index: 1000;
 }
 
 #navbar-links {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  position: relative;
+  right: 5%;
 }
 
 #navbar-link {
-  position: relative;
-  top: 30px;
-  left: 30%;
-  margin: 0 40px;
+  margin: 2vh 40px;
+}
+
+#navbar-link > h4 {
   color: #fff;
+  mix-blend-mode: difference;
 }
 
 a {
@@ -44,52 +45,88 @@ a {
 }
 
 h1 {
-  font-weight: 300;
-  font-size: 60px;
+  font-weight: 1000;
+  font-size: 5vw;
   line-height: 1.2;
   margin-bottom: 15px;
 }
 
-.content {
-  width: 100%;
-  height: 100%;
-  position: absolute;
+.showcase {
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: #fff;
   padding: 0 20px;
-  z-index: 20;
 }
 
 .video-container {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
   background: var(--primary-color)
     url('./https://traversymedia.com/downloads/cover.jpg') no-repeat center
     center/cover;
-  z-index: 10;
 }
 
 .video-container video {
   min-width: 100%;
   min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   object-fit: cover;
+}
+
+.video-container:after {
+  content: '';
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+}
+
+.content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.content > iframe {
+  width: 550px;
+  height: 330px;
+  margin: 3vh 0;
+}
+
+.content h1 {
+  color: #ffffff;
+}
+
+.content > h3 {
+  color: #f0f0f0;
+  font-weight: 500;
+  font-size: 3vw;
 }
 
 .btn {
   display: inline-block;
   padding: 10px 30px;
-  background: var(--primary-color);
+  background: #098ec2;
   color: #fff;
   border-radius: 5px;
   border: solid #fff 1px;
   margin-top: 25px;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 .btn:hover {
@@ -97,6 +134,7 @@ h1 {
 }
 
 #about {
+  background-color: rgb(255, 255, 255);
   padding: 40px;
   text-align: center;
 }
@@ -113,7 +151,7 @@ h1 {
 }
 
 #contact {
-  background-color: #9c9c9c;
+  background: #9c9c9c;
   padding: 40px;
   text-align: center;
 }
@@ -130,6 +168,7 @@ h1 {
 }
 
 #terms {
+  background: rgb(255, 255, 255);
   padding: 40px;
   text-align: center;
 }
