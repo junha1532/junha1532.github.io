@@ -109,11 +109,11 @@ h1 {
 }
 
 .content h1 {
-  color: #ffffff;
+  color: #f31818;
 }
 
 .content > h3 {
-  color: #f0f0f0;
+  color: #f31818;
   font-weight: 500;
   font-size: 3vw;
 }
