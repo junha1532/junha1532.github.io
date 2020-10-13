@@ -2993,6 +2993,9 @@
   background: rgba(12, 34, 52, 0.6);
 }
 .ih-item.square.effect6 .img {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
   -webkit-transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
