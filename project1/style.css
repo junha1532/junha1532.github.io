@@ -68,9 +68,7 @@ h1 {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background: var(--primary-color)
-    url('./https://traversymedia.com/downloads/cover.jpg') no-repeat center
-    center/cover;
+  background: var(--primary-color);
 }
 
 .video-container video {
@@ -102,14 +100,41 @@ h1 {
   z-index: 2;
 }
 
-.content > iframe {
-  width: 550px;
-  height: 330px;
-  margin: 3vh 0;
-}
-
 .content h1 {
   color: #f31818;
+}
+
+.script-container {
+  text-align: center;
+  width: 50%;
+}
+
+.script-container span {
+  color: white;
+  text-transform: uppercase;
+  display: block;
+}
+
+.text1 {
+  font-size: 3vw;
+  font-weight: 700;
+  letter-spacing: 0px;
+  margin-bottom: 20px;
+  background: none;
+  position: relative;
+  animation: text 3s 1;
+}
+
+@keyframes text {
+  0% {
+    color: black;
+  }
+  30% {
+    letter-spacing: 10px;
+  }
+  85% {
+    letter-spacing: 3px;
+  }
 }
 
 .content > h3 {
