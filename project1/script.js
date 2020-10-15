@@ -1,7 +1,7 @@
 var vid = document.getElementById("background-video");
 vid.playbackRate = 0.8;
 
-setTimeout(function() { show_youtube(); }, 5000);
+setTimeout(function() { show_youtube(); }, 2500);
 
 function show_youtube() {
     document.getElementById('script-container').style.display = 'none';

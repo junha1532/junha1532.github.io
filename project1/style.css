@@ -149,7 +149,7 @@ h1 {
   margin-bottom: 20px;
   background: none;
   position: relative;
-  animation: text 3s 1;
+  animation: text 1.5s 1;
 }
 
 @keyframes text {
