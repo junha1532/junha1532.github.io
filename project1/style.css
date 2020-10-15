@@ -48,7 +48,7 @@ h1 {
   font-weight: 1000;
   font-size: 5vw;
   line-height: 1.2;
-  margin-bottom: 15px;
+  margin-bottom: 1vw;
 }
 
 .showcase {
@@ -59,6 +59,32 @@ h1 {
   text-align: center;
   color: #fff;
   padding: 0 20px;
+}
+
+#phone {
+  display: none;
+  position: relative;
+  z-index: 100;
+}
+
+#video-lettering {
+  display: none;
+  background-color: #505050f1;
+  padding: 0;
+  text-indent: 0px;
+  font-weight: 1000;
+  font-size: 18px;
+  color: #ffffff;
+  position: absolute;
+  top: calc(6vw + 57px);
+  right: calc(50% - 145px);
+  z-index: 102;
+}
+
+#youtube {
+  position: absolute;
+  top: calc(6vw + 40px);
+  z-index: 101;
 }
 
 .video-container {
@@ -72,6 +98,7 @@ h1 {
 }
 
 .video-container video {
+  -webkit-filter: blur(0px);
   min-width: 100%;
   min-height: 100%;
   position: absolute;

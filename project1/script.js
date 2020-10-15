@@ -5,9 +5,10 @@ setTimeout(function() { show_youtube(); }, 5000);
 
 function show_youtube() {
     document.getElementById('script-container').style.display = 'none';
+    document.getElementById('phone').style.display = 'block';
+    document.getElementById('video-lettering').style.display = 'block';
     importYoutube()
     onYouTubeIframeAPIReady();
-    document.getElementById('youtube').style.margin = '3vh 0';
 }
 
 function importYoutube(){
@@ -22,8 +23,8 @@ function importYoutube(){
 function onYouTubeIframeAPIReady() {
     var player;
     player = new YT.Player('youtube', {
-        height: '390',
-        width: '660',
+        height: '430',
+        width: '740',
         videoId: 'Wf_2Q2wRWes',
         events: {
         'onReady': onPlayerReady
