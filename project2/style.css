@@ -60,6 +60,11 @@ a {
   transition: all 0.7s ease;
 }
 
+.navbar__logo a:before {
+  color: #fed16b;
+  content: '뉴 ';
+}
+
 .navbar__logo {
   display: flex;
   align-items: center;
@@ -70,8 +75,8 @@ a {
 }
 
 .navbar__logo img {
-  width: 80px;
-  padding: 0;
+  width: 60px;
+  padding: 0 4px;
 }
 
 .navbar__logo {
