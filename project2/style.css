@@ -50,7 +50,7 @@ a {
   justify-content: space-between;
   align-items: center;
   background-color: #26334391;
-  padding: 14px;
+  padding: 4px;
   transition: all 0.7s ease;
 }
 
@@ -61,11 +61,19 @@ a {
 }
 
 .navbar__logo {
+  display: flex;
+  align-items: center;
   font-size: 24px;
   color: white;
   position: relative;
   left: 1vw;
 }
+
+.navbar__logo img {
+  width: 80px;
+  padding: 0;
+}
+
 .navbar__logo {
   font-size: 24px;
 }
