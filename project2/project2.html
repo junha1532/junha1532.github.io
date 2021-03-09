@@ -23,7 +23,7 @@
 
     <ul class="navbar__menu">
         <li><a href="">처음으로</a></li>
-        <li><a href="">카이로 하우스 소개</a></li>
+        <li><a href="">소개</a></li>
         <li><a href="">객실 안내</a></li>
         <li><a href="">문의</a></li>
         <li><a href="">찾아오는 길</a></li>
@@ -57,5 +57,44 @@
     </div>
     </div>
     <div class="about"></div>
+    <div class="unpressed" id="contact-form">
+        <div class="contact-form-text-wrapper">
+            <div class="contact-form-logo-wrapper">
+                <i class="far fa-comment fa-1x"></i>
+                <h3>Contact Us</h3>
+            </div>
+            <div class="contact-form-description-wrapper">
+            <h4>How can we help?</h4>
+            <p>Please send us your inquiries to our email. We will get back to you within 24 hours.</p>
+        </div>
+        </div>
+        <!--method="post"-->
+        <form action="/" id="gform">
+          <div class="form-element">
+            <input id="name" placeholder="Name" name="name" />
+          </div>
+          <div class="form-element">
+            <input
+              id="email"
+              placeholder="Enter email"
+              type="email"
+              name="email"
+            />
+          </div>
+          <div class="form-element">
+            <textarea
+              id="message"
+              placeholder="Your Message"
+              name="message"
+            ></textarea>
+          </div>
+          <div class="form-element">
+          <input id="submit-form" type="submit" value="이메일 보내기" />
+        </div>
+        </form>
+      </div>
+    <button class="inquiry__button unpressed">
+        <i class="far fa-comment fa-2x"></i>
+      </button>
 </body>
 </html>
