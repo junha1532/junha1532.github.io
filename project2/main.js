@@ -7,6 +7,7 @@ const navMenu = document.querySelector('.navbar__menu');
 const languageMenu = document.querySelector('.language__menu');
 const inquiryBtn = document.querySelector('.inquiry__button');
 const contactForm = document.querySelector('#contact-form');
+const contactBtn = document.querySelector('.navbar__menu').children[3];
 // const icons = document.querySelector('.navbar__icons');
 
 toggleBtn.addEventListener('click', () =>{
@@ -20,6 +21,23 @@ languageSelector.addEventListener('click', () =>{
 });
 
 inquiryBtn.addEventListener('click', () =>{
+  toggleContactForm();
+});
+
+contactBtn.addEventListener('click', () =>{
+  toggleContactForm();
+});
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function navbarScroll() {
+  if (window.pageYOffset > navbar.offsetTop) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+function toggleContactForm(){
   if (inquiryBtn.querySelector('i').classList.contains('fa-comment')){
     //Change icon
     inquiryBtn.querySelector('i').classList.remove('far');
@@ -45,15 +63,6 @@ inquiryBtn.addEventListener('click', () =>{
     contactForm.classList.add('unpressed');
     setTimeout(() => {
       contactForm.classList.remove('pressed');
-    }, 500)
-  }
-});
-
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function navbarScroll() {
-  if (window.pageYOffset > navbar.offsetTop) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
+    }, 495)
   }
 }

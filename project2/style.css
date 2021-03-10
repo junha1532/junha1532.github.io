@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --text-color: #f0f4f5;
   --background-color: #263343;
@@ -94,6 +98,7 @@ a {
 .navbar__menu li:hover {
   background-color: #d49466;
   border-radius: 4px;
+  cursor: pointer;
 }
 .navbar__toggleBtn {
   display: none;
@@ -109,6 +114,7 @@ a {
   right: 1vw;
   padding: 8px 12px;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .language__selector a img {
@@ -346,6 +352,24 @@ a {
 #submit-form:hover {
   background-color: #263343;
   transition: all 0.3s ease-in-out;
+}
+
+.map {
+  background-color: #ccd4f1;
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.map-text {
+  padding: 3vh 2vw;
+}
+
+.map iframe {
+  width: 50%;
+  height: 50vh;
 }
 
 @media screen and (max-width: 870px) {
