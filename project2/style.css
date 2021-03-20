@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 .home {
@@ -161,6 +161,36 @@ a {
   width: 100%;
 }
 
+.kakao__button {
+  position: fixed;
+  height: 60px;
+  width: 60px;
+  bottom: 30px;
+  right: 110px;
+  opacity: 1;
+  border: none;
+  outline: none;
+  background: #f7e600;
+  border-radius: 50%;
+  justify-content: center;
+  z-index: 202;
+}
+
+.kakao__button:hover {
+  height: 56px;
+  width: 56px;
+  bottom: 32px;
+  right: 112px;
+  background: #ccb116;
+  transition: all 0.3s ease-in-out;
+}
+
+.kakao__button img {
+  padding-top: 3px;
+  width: 35px;
+  height: 35px;
+}
+
 .inquiry__button {
   position: fixed;
   height: 60px;
@@ -178,11 +208,14 @@ a {
 
 .inquiry__button:hover {
   background: #263343;
+  bottom: 32px;
+  right: 42px;
+  height: 56px;
+  width: 56px;
   transition: all 0.3s ease-in-out;
 }
 
 .inquiry__button i {
-  transform: scaleX(-1);
   color: #f0f4f5;
 }
 
@@ -286,11 +319,15 @@ a {
   width: 30%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   background-color: #263343;
   border-radius: 20px;
   padding: 6px 15px;
+}
+
+.contact-form-logo-wrapper i {
+  transform: scaleX(-1);
 }
 
 .contact-form-description-wrapper {
@@ -354,11 +391,73 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
+#sent-msg {
+  opacity: 0;
+  width: 80%;
+  background-color: #2eb605;
+  font-size: 15px;
+  text-align: center;
+  color: #f1f1f1;
+  padding: 10px 10px;
+  margin-top: 10px;
+  border-radius: 3px;
+}
+
+#sent-msg.pressed {
+  animation-name: opacityOn;
+  animation-duration: 10s;
+}
+
+@keyframes opacityOn {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .rooms {
   background: #ffffff;
-  filter: brightness(80%);
+  filter: brightness(99%);
   height: 100vh;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.floor-plan-wrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.floor-plan-elements-wrapper {
+  position: absolute;
+}
+
+#roomABtn {
+  position: absolute;
+  right: 80px;
+  top: 280px;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: #d3b119;
+  opacity: 0.7;
+  transition-duration: 0.4s;
+}
+
+#roomABtn:hover {
+  background-color: #ffe600;
+  transition: all 0.3s ease-in-out;
 }
 
 .map {
@@ -378,6 +477,78 @@ a {
   width: 50%;
   height: 50vh;
 }
+
+#photo-slider-wrapper {
+  visibility: hidden;
+  background-color: #263343;
+  position: fixed;
+  width: 80vw;
+  height: 80vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5000;
+}
+
+#photo-slider-wrapper.visible {
+  visibility: visible;
+}
+
+/*got it from slider.js*/
+.swiper-close-wrapper {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 2;
+}
+
+#swiper-close-button {
+  background-color: #fff0;
+  color: #ffffff;
+  padding: 0;
+  position: relative;
+  right: 40px;
+  top: 20px;
+  border: none;
+  outline: none;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.gallery-top {
+  height: 80%;
+  width: 100%;
+}
+
+.gallery-thumbs {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.gallery-thumbs .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.gallery-thumbs .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+/*Until here*/
 
 @media screen and (max-width: 870px) {
   .navbar {
