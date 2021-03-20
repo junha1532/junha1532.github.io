@@ -522,9 +522,13 @@ a {
 }
 
 .swiper-slide {
-  background-size: auto;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.swiper-cover {
+  background-size: cover !important;
 }
 
 .gallery-top {
