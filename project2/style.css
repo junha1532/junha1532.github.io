@@ -480,10 +480,10 @@ a {
 
 #photo-slider-wrapper {
   visibility: hidden;
-  background-color: #263343;
+  background-color: #263343ec;
   position: fixed;
-  width: 80vw;
-  height: 80vh;
+  width: 100vw;
+  height: 100vh;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
