@@ -79,9 +79,127 @@ function toggleContactForm(){
 
 swiperCloseBtn.addEventListener('click', () =>{
   document.querySelector("#photo-slider-wrapper").classList.remove('visible');
+  document.querySelectorAll('.swiper-slide').forEach(e => e.remove());
 });
 
-document.querySelector("#roomABtn").addEventListener('click', () =>{
+//Room A listener
+document.querySelectorAll("#roomsBtn")[0].addEventListener('click', () =>{
+  var img1 = document.createElement("div");
+  var img2 = document.createElement("div");
+  var img3 = document.createElement("div");
+
+  img1.className = 'swiper-slide';
+  img1.style.backgroundImage = 'url(./image/room3-1.jpg)';
+
+  img2.className = 'swiper-slide';
+  img2.style.backgroundImage = 'url(./image/room3-2.jpg)';
+
+  img3.className = 'swiper-slide';
+  img3.style.backgroundImage = 'url(./image/bedroom.jpg)';
+
+  document.querySelector(".gallery-top .swiper-wrapper").appendChild(img1);
+  document.querySelector(".gallery-top .swiper-wrapper").appendChild(img2);
+  document.querySelector(".gallery-top .swiper-wrapper").appendChild(img3);
+
+  var img1 = document.createElement("div");
+  var img2 = document.createElement("div");
+  var img3 = document.createElement("div");
+
+  img1.className = 'swiper-slide swiper-cover';
+  img1.style.backgroundImage = 'url(./image/room3-1.jpg)';
+
+  img2.className = 'swiper-slide swiper-cover';
+  img2.style.backgroundImage = 'url(./image/room3-2.jpg)';
+
+  img3.className = 'swiper-slide swiper-cover';
+  img3.style.backgroundImage = 'url(./image/bedroom.jpg)';
+
+  document.querySelector(".gallery-thumbs .swiper-wrapper").appendChild(img1);
+  document.querySelector(".gallery-thumbs .swiper-wrapper").appendChild(img2);
+  document.querySelector(".gallery-thumbs .swiper-wrapper").appendChild(img3);
+
+  reloadSwipper();
+  
+  document.querySelector("#photo-slider-wrapper").classList.add('visible');
+});
+
+//Living Room listener
+document.querySelectorAll("#roomsBtn")[1].addEventListener('click', () =>{
+  var img1 = document.createElement("div");
+  var img2 = document.createElement("div");
+  var img3 = document.createElement("div");
+
+  img1.className = 'swiper-slide';
+  img1.style.backgroundImage = 'url(./image/livingroom-1.jpg)';
+
+  img2.className = 'swiper-slide';
+  img2.style.backgroundImage = 'url(./image/livingroom-2.jpg)';
+
+  img3.className = 'swiper-slide';
+  img3.style.backgroundImage = 'url(./image/livingroom.jpg)';
+
+  document.querySelector(".gallery-top .swiper-wrapper").appendChild(img1);
+  document.querySelector(".gallery-top .swiper-wrapper").appendChild(img2);
+  document.querySelector(".gallery-top .swiper-wrapper").appendChild(img3);
+
+  var img1 = document.createElement("div");
+  var img2 = document.createElement("div");
+  var img3 = document.createElement("div");
+
+  img1.className = 'swiper-slide swiper-cover';
+  img1.style.backgroundImage = 'url(./image/livingroom-1.jpg)';
+
+  img2.className = 'swiper-slide swiper-cover';
+  img2.style.backgroundImage = 'url(./image/livingroom-2.jpg)';
+
+  img3.className = 'swiper-slide swiper-cover';
+  img3.style.backgroundImage = 'url(./image/livingroom.jpg)';
+
+  document.querySelector(".gallery-thumbs .swiper-wrapper").appendChild(img1);
+  document.querySelector(".gallery-thumbs .swiper-wrapper").appendChild(img2);
+  document.querySelector(".gallery-thumbs .swiper-wrapper").appendChild(img3);
+
+  reloadSwipper();
+  
+  document.querySelector("#photo-slider-wrapper").classList.add('visible');
+});
+
+//Balcony listener
+document.querySelectorAll("#roomsBtn")[2].addEventListener('click', () =>{
+  var img1 = document.createElement("div");
+  var img2 = document.createElement("div");
+  var img3 = document.createElement("div");
+
+  img1.className = 'swiper-slide';
+  img1.style.backgroundImage = 'url(./image/balcony-1.jpg)';
+
+  img2.className = 'swiper-slide';
+  img2.style.backgroundImage = 'url(./image/balcony-2.jpg)';
+
+  img3.className = 'swiper-slide';
+  img3.style.backgroundImage = 'url(./image/bedroom.jpg)';
+
+  document.querySelector(".gallery-top .swiper-wrapper").appendChild(img1);
+  document.querySelector(".gallery-top .swiper-wrapper").appendChild(img2);
+
+  var img1 = document.createElement("div");
+  var img2 = document.createElement("div");
+  var img3 = document.createElement("div");
+
+  img1.className = 'swiper-slide swiper-cover';
+  img1.style.backgroundImage = 'url(./image/balcony-1.jpg)';
+
+  img2.className = 'swiper-slide swiper-cover';
+  img2.style.backgroundImage = 'url(./image/balcony-2.jpg)';
+
+  img3.className = 'swiper-slide swiper-cover';
+  img3.style.backgroundImage = 'url(./image/bedroom.jpg)';
+
+  document.querySelector(".gallery-thumbs .swiper-wrapper").appendChild(img1);
+  document.querySelector(".gallery-thumbs .swiper-wrapper").appendChild(img2);
+
+  reloadSwipper();
+  
   document.querySelector("#photo-slider-wrapper").classList.add('visible');
 });
 
@@ -108,22 +226,24 @@ function sendEmailInquiry(){
 inquiryForm.reset();
 }
 
-// Copied from Slider.js
-var galleryThumbs = new Swiper('.gallery-thumbs', {
-  spaceBetween: 10,
-  slidesPerView: 4,
-  freeMode: true,
-  watchSlidesVisibility: true,
-  watchSlidesProgress: true,
-});
-var galleryTop = new Swiper('.gallery-top', {
-  spaceBetween: 10,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  thumbs: {
-    swiper: galleryThumbs
-  }
-});
+function reloadSwipper(){
+  // Copied from Slider.js
+  var galleryThumbs = new Swiper('.gallery-thumbs', {
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+  });
+  var galleryTop = new Swiper('.gallery-top', {
+    spaceBetween: 10,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    thumbs: {
+      swiper: galleryThumbs
+    }
+  });
 //Unitl here
+}

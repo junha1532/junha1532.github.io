@@ -442,22 +442,44 @@ a {
   position: absolute;
 }
 
-#roomABtn {
+.floor-plan-elements-wrapper > button {
+  font-weight: 1000;
   position: absolute;
-  right: 80px;
-  top: 280px;
   border: none;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  background-color: #d3b119;
-  opacity: 0.7;
+  border-radius: 10%;
+  padding: 5px;
+  transition: all 0.3s ease-in-out;
   transition-duration: 0.4s;
 }
 
-#roomABtn:hover {
+.floor-plan-elements-wrapper > button:nth-of-type(1) {
+  right: 75px;
+  top: 360px;
+  background-color: #d3b119;
+}
+
+.floor-plan-elements-wrapper > button:nth-of-type(1):hover {
   background-color: #ffe600;
-  transition: all 0.3s ease-in-out;
+}
+
+.floor-plan-elements-wrapper > button:nth-of-type(2) {
+  right: 550px;
+  top: 270px;
+  background-color: #199988;
+}
+
+.floor-plan-elements-wrapper > button:nth-of-type(2):hover {
+  background-color: #22dac1;
+}
+
+.floor-plan-elements-wrapper > button:nth-of-type(3) {
+  right: 415px;
+  top: 555px;
+  background-color: #d35d19;
+}
+
+.floor-plan-elements-wrapper > button:nth-of-type(3):hover {
+  background-color: #ecaa1a;
 }
 
 .map {
