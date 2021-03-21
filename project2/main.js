@@ -168,7 +168,6 @@ document.querySelectorAll("#roomsBtn")[1].addEventListener('click', () =>{
 document.querySelectorAll("#roomsBtn")[2].addEventListener('click', () =>{
   var img1 = document.createElement("div");
   var img2 = document.createElement("div");
-  var img3 = document.createElement("div");
 
   img1.className = 'swiper-slide';
   img1.style.backgroundImage = 'url(./image/balcony-1.jpg)';
@@ -176,24 +175,17 @@ document.querySelectorAll("#roomsBtn")[2].addEventListener('click', () =>{
   img2.className = 'swiper-slide';
   img2.style.backgroundImage = 'url(./image/balcony-2.jpg)';
 
-  img3.className = 'swiper-slide';
-  img3.style.backgroundImage = 'url(./image/bedroom.jpg)';
-
   document.querySelector(".gallery-top .swiper-wrapper").appendChild(img1);
   document.querySelector(".gallery-top .swiper-wrapper").appendChild(img2);
 
   var img1 = document.createElement("div");
   var img2 = document.createElement("div");
-  var img3 = document.createElement("div");
 
   img1.className = 'swiper-slide swiper-cover';
   img1.style.backgroundImage = 'url(./image/balcony-1.jpg)';
 
   img2.className = 'swiper-slide swiper-cover';
   img2.style.backgroundImage = 'url(./image/balcony-2.jpg)';
-
-  img3.className = 'swiper-slide swiper-cover';
-  img3.style.backgroundImage = 'url(./image/bedroom.jpg)';
 
   document.querySelector(".gallery-thumbs .swiper-wrapper").appendChild(img1);
   document.querySelector(".gallery-thumbs .swiper-wrapper").appendChild(img2);
